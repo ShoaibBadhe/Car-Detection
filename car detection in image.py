@@ -1,6 +1,6 @@
 import cv2
 
-car_cascade = cv2.CascadeClassifier('haarcascade_car.xml')
+carCascade = cv2.CascadeClassifier('haarcascade_car.xml')
 
 cap = cv2.VideoCapture('c1.jpg')
 

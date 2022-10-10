@@ -5,7 +5,7 @@ carCascade = cv2.CascadeClassifier('haarcascade_car.xml')
 cap = cv2.VideoCapture('cars.mp4')
 
 while cap.isOpened():
-    flag,img = cap.read()
+    fla,img = cap.read()
     gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
     cars = carCascade.detectMultiScale(gray, 1.05, 10)
     for (x,y,w,h) in cars:
